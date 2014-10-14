@@ -1,0 +1,75 @@
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		//1-Definir un objeto
+		
+		var oEmp1 = Object();
+		oEmp1.numero = 1001;
+		oEmp1.nombre = "Pepe";
+		oEmp1.salario = 4000;
+		oEmp1.tlfn = "2222222";
+		//Comprueba la variable oEmp1 en la consola del navegador
+		console.log("oEmp1");
+		console.log(oEmp1);
+		//comprueba el objeto completo y comprueba las propiedades utilizando
+		//la notacion punto y notacion de array asociativo 
+		/*
+// array asociativo
+		console.log("Numero: "+ oEmp1["numero"]);
+		console.log("nombre: "+ oEmp1["nombre"]);
+		console.log("salario: "+ oEmp1["salario"]);
+		console.log("tlfn: "+ oEmp1["tlfn"]);
+		
+//notacion punto
+		console.log(" notacion punto Numero: "+ oEmp1.numero);
+		console.log("notacion punto nombre: "+ oEmp1.nombre);
+		console.log("notacion punto salario: "+ oEmp1.salario);
+		console.log("notacion punto tlfn: "+ oEmp1.tlfn);
+		
+
+
+*/
+
+		//2-Otro modo de definir objetos
+		var oEmp2 = {};
+		oEmp2.numero = 1002;
+		oEmp2.nombre = "Lola";
+		oEmp2.salario = 8000;
+		oEmp2.tlfn = "2222221";
+		//Comprueba la variable oEmp1 y oEmp2 en la consola del navegador
+		console.log("oEmp2");
+		console.log(oEmp2);
+
+		//3-Un tercer modo de crear objetos
+		
+
+		var oEmp3 = {
+		numero : 1003,
+		nombre : "Luisito",
+		salario : 300,
+		tlfn : "2222220"
+		};
+		//Comprueba las variables en la consola del navegador
+
+		console.log("numero: "+ oEmp3["numero"]);
+		console.log("nombre: "+ oEmp3["nombre"]);
+		console.log("salario: "+ oEmp3["salario"]);
+		console.log("tlfn: "+ oEmp3["tlfn"]);
+		//Supongamos que tenemos un objeto con muchas propiedades
+		//queremos acceder a las propiedades de ese objeto
+		//para ello usamos el for in para recorrer el objeto
+		//El siguiente ejemplo muestra la clave y el valor del objeto
+		console.log("oEmp3 con el for ");
+		
+		for (p in oEmp3){
+			//alert(p + " = "+oEmp3[p]);
+			console.log(p+" = "+oEmp3[p]);
+		}
+		
+	</script>
+</head>
+<body>
+
+</body>
+</html>

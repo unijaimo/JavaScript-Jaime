@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		
+		var lista=new Array();
+		lista.push(2);
+		lista.push('hola');
+		console.log(lista[0]);
+		console.log(lista[1]);
+		
+		
+		var lista=[1,2,3];
+		console.log(lista.length);
+
+		// grupo con subgrupos 
+		var lista2=[[1,2,3],['a','b','c']];
+		console.log(lista2[1].length);
+		
+
+		// imprime a, b y c
+		for(i=0;i<lista2[1].length;i++)
+			console.log(lista2[1][i]);
+		
+		console.log("Todos los elementos de lista2");
+		for(i=0;i<lista2.length;i++)
+			for(j=0;j<lista2[i].length;j++)
+				console.log(lista2[i][j]);
+
+		// join() une todos los elementos de un array formando una cadena y separándolos con aquel argumento que definamos.(Por defecto el separador es la coma [,]).
+		var cadena=lista2[1].join('');
+		console.log(cadena);
+
+		var cadena2='hola';
+		var lista3=cadena2.split('');
+		console.log(lista3[1]);
+		console.log("Todos los elementos de lista3");
+		for(i=0;i<lista3.length;i++)
+			for(j=0;j<lista3[i].length;j++)
+				console.log(lista3[i][j]);
+
+		var cadena3='ho-la';
+		// La función split() permite dividir una cadena de caracteres (string) en varios bloques y crear un array con estos, en función de un elemento indicador del split.
+		var lista4=cadena3.split('-');
+		console.log(lista4[0]);
+
+		console.log("Todos los elementos de lista4");
+		for(i=0;i<lista4.length;i++)
+			for(j=0;j<lista4[i].length;j++)
+				console.log(lista4[i][j]);
+
+	</script>
+</head>
+<body></body>
+</html>
