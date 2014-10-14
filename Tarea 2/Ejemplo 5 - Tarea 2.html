@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Mueve el raton por encima del boton hora para saber la hora y fecha y pulsa cualquier tecla para saber las veces que se ha mostrado la fecha.</p>
+
+<button onmouseover="displayDate()">hora?</button>
+<button onkeydown="cont()">contador hora</button>
+
+<script>
+var i=0;
+function displayDate() {
+	i++;
+ document.getElementById("demo").innerHTML = Date();
+    
+
+}
+function cont(){
+	document.getElementById('demo').innerHTML = i;
+}
+
+</script>
+
+<p id="demo"></p>
+
+</body>
+</html> 

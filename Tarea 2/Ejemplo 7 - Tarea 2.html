@@ -1,0 +1,41 @@
+<html>
+<body>
+
+<p>Pulsa el boton para ejecutar un mensaje basado en " que dia es hoy?"</p>
+
+<button onclick="myFunction()">Pulsame</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var text, day;
+
+    switch (new Date().getDay()) {
+        case 1:
+            text = "Hoy es Lunes";
+            break;
+        case 2:
+            text = "Hoy es Martes";
+            break;
+        case 3:
+            text = "Hoy es Miercoles";
+            break;
+        case 4:
+            text = "Hoy es Jueves";
+            break;
+        case 5:
+            text = "Hoy es viernes";
+            break;
+        case  6:
+            text = "hoy es sabado";
+            break;
+           default: text = " hoy es domingo";
+            
+    }
+    document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html>

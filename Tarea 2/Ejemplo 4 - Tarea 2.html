@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Pulsa el boton hora para saber la fecha y el boton contador para saber el numero de veces que se ha mostrado la fecha.</p>
+
+<button onclick="displayDate()">hora?</button>
+<button onclick="cont()">contador hora</button>
+
+<script>
+var i=0;
+function displayDate() {
+	i++;
+ document.getElementById("demo").innerHTML = Date();
+    
+
+}
+function cont(){
+	document.getElementById('demo').innerHTML = i;
+}
+
+</script>
+
+<p id="demo"></p>
+
+</body>
+</html> 
